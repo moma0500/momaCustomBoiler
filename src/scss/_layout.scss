@@ -25,45 +25,51 @@ header {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
-  background: rgb(175, 222, 176);
+  background: $bg1;
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 3fr 1fr;
   grid-template-areas: "heady heady heady" "navvy navvy navvy" "aside1 mainy aside2" "aside1 mainy aside2" "aside1 mainy aside2" "footy footy footy";
 }
 
 header {
   grid-area: heady;
-  background: rgb(254, 218, 175);
+  background: $bg1;
 }
 
 nav {
   grid-area: navvy;
-  background: rgb(0, 0, 236);
+  background: $bg1;
 }
 
 main {
   grid-area: mainy;
-  background: rgb(240, 234, 182);
+  background: $bg1;
+  max-height: 100%;
+}
+
+#mainy {
+  grid-area: mainy;
+  background: $bg1;
   max-height: 100%;
 }
 
 #aside1 {
   grid-area: aside1;
-  background: rgb(241, 202, 174);
+  background: $bg2;
 }
 
 #aside2 {
   grid-area: aside2;
-  background: rgb(191, 226, 246);
+  background: $bg2;
 }
 
 footer {
   grid-area: footy;
-  background: rgb(171, 171, 171);
+  background: $bg2;
 }
 
 nav ul {
