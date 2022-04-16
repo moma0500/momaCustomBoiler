@@ -2,22 +2,34 @@
    Author's custom styles
    ========================================================================== */
 body {
-  background: $bg1;
+  // background: $bgBlue;
   font-family: $font1;
   font-size: 16px;
+  color: $bgNavy;
 }
 
 h1 {
   font-family: $font1;
+  color: $bgNavy;
   font-weight: 500;
   font-size: 60px;
-  padding: 10px;
 }
 
 h2 {
-  font-size: 1.25em;
+  color: $bgNavy;
+  font-size: 20px;
 }
 
 h3 {
+  color: $bgNavy;
+  font-size: 12px;
+}
 
+h4{
+  color: $bgNavy;
+  font-size: 8px;
+}
+
+p {
+  color: $bgNavy;
 }

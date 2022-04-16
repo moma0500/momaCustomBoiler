@@ -1,7 +1,6 @@
 //css grid, flex, media query
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300;1,500;1,600;1,800&display=swap');
 
-
 *,
 *:after,
 *:before {
@@ -21,12 +20,13 @@ nav {
 footer,
 header {
   text-align: center;
+  color: $bgBlue;
 }
 
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  background: $bg1;
+
   display: grid;
   width: 100vw;
   height: 100vh;
@@ -34,44 +34,59 @@ header {
   grid-template-areas: "heady heady heady" "navvy navvy navvy" "aside1 mainy aside2" "aside1 mainy aside2" "aside1 mainy aside2" "footy footy footy";
 }
 
+.photoContainer {
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px;
+  margin-left: 30px;
+}
+
+.photo {
+  padding: 10px;
+}
+
 header {
   grid-area: heady;
-  background: $bg1;
+
 }
 
 nav {
   grid-area: navvy;
-  background: $bg1;
-  padding: 20px;
-  margin: 50px;
-
+  padding-bottom: 50px;
 }
 
 main {
   grid-area: mainy;
-  background: $bg1;
+  background: $bgBlue;
   max-height: 100%;
 }
 
 #mainy {
   grid-area: mainy;
-  background: $bg1;
+  background: $bgBlue;
   max-height: 100%;
 }
 
 #aside1 {
   grid-area: aside1;
-  background: $bg2;
+  background: $bgBlue;
+  padding: $textPadding;
 }
 
 #aside2 {
   grid-area: aside2;
-  background: $bg2;
+  background: $bgBlue;
+  padding: $textPadding;
+}
+
+.sideText {
+  padding: $textPadding;
 }
 
 footer {
   grid-area: footy;
-  background: $bg2;
+  background: $bgYellow;
 }
 
 nav ul {
@@ -88,16 +103,14 @@ nav ul li {
 #p2,
 #p3,
 #p4 {
-  padding: 15px;
+  padding: $textPadding;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-
-#pHead{
+#pHead {
   padding-bottom: 8px;
 }
-
 //SMALLER WINDOW
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .container {
@@ -107,20 +120,24 @@ nav ul li {
 
   #aside1 {
     grid-area: aside1;
-    background: $bg2;
     text-align: center;
-    padding: 10px;
+    padding: $textPadding;
   }
 
   #aside2 {
     grid-area: aside2;
-    background: $bg2;
     text-align: center;
+    padding: $textPadding;
+  }
 
-    padding: 10px;
+  .photoContainer {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+
   }
 }
-
 //LARGER WINDOWS
 @media screen and (max-width: 640px) {
   .container {
@@ -135,14 +152,10 @@ nav ul li {
 
   nav ul li a {
     display: block;
-    padding: 5px 5px;
+    padding: 5px;
     margin: 5px;
-    background: $bg1;
   }
 
-  .nav_button {
-    padding: 5px;
-  }
 
 
 }
