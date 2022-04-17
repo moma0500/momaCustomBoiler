@@ -75,6 +75,7 @@ main {
   grid-area: aside1;
   background: $bgYellow;
   padding: $textPadding;
+
 }
 
 #aside2 {
@@ -111,8 +112,9 @@ nav ul li {
 }
 
 .nav_button:hover {
-  color: $bgYellow;
+  color: $bgNavy;
   background: $bgYellow;
+
 }
 
 #p1,
