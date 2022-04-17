@@ -9,113 +9,95 @@
   <link href="favicon.ico" rel="icon" type="image/x-icon" />
 
   <style>
-  @import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,200;0,300;0,500;0,600;0,800;1,200;1,300;1,500;1,600;1,800&display=swap');
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
 
     body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
+      background: rgb(227, 246, 245);
+      text-align: center;
+      font-family: JetBrains Mono;
+      font-weight:200;
+      font-size: 16px;
+      color: rgb(39, 35, 67);
+      margin-top: 100px;
     }
 
     h1 {
-      color: black;
-      font-size: 5em;
-      font-weight: 400;
-      padding-top: 3em;
-      font-family: 'Prata', serif;
+      font-family: $font1;
+      color: rgb(39, 35, 67);
+      font-weight: 800;
+      font-size: 60px;
+    }
+
+    h2 {
+      color: rgb(39, 35, 67);
+      font-size: 20px;
+    }
+
+    h3 {
+      color: rgb(39, 35, 67);
+      font-size: 12px;
+    }
+
+    h4 {
+      color: rgb(39, 35, 67);
+      font-size: 8px;
+      font-weight: 200;
     }
 
     p {
-      color: black;
-      font-size: 1em;
-      margin: 0 auto;
-      width: 280px;
-      margin-top: 2em;
-      margin-bottom: 0.5em;
-      font-family: 'Poppins', sans-serif;
+      color: rgb(39, 35, 67);
+      font-weight: 200;
     }
 
-    .grid-container {
-      display: grid;
-      grid-column-gap: 2em;
-      grid-template-columns: 2fr 2fr;
-      padding: 1em;
-      height: 50vw;
+    a {
+      padding: 20px;
+      background: rgb(39, 35, 67);
+      border-radius: 10px;
+      color: $bgYellow;
+      border: 0;
+      font-family: JetBrains Mono;
+      font-weight:200;
+      text-decoration: none;
     }
 
-    .grid-item {
-      color: white;
-      padding: 2em;
-      font-size: 1em;
-      border-radius: .5em;
-    }
-
-    #image {
-      width: 500px;
-      height: 500px;
-      padding-top: 10em;
-    }
-
-    .button {
-      background-color: #ADD8E6;
-      border: 2px solid black;
-      padding: 5px 11px;
-      margin-top: 5em;
-      padding: 5px 10px;
-      text-align: center;
-      display: inline-block;
-      font-size: 12px;
-      margin: 10px 30px;
-      cursor: pointer;
-      text-decoration:none;
+    a:hover {
+      font-size: 15px;
+      color: rgb(39, 35, 67);
+      font-weight: 700;
+      text-decoration: none;
     }
 
     a:visited {
-     text-decoration: none;
-     color: black;;
+      font-size: 15px;
+      color: rgb(255, 216, 3);
+      font-weight: 700;
+      text-decoration: none;
     }
 
-    @media only screen and (max-width: 280px) {
-
-      body,
-      p {
-        width: 95%;
-      }
-
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
+    button {
+      padding: 20px;
+      margin: auto;
+      background: rgb(39, 35, 67);
+      border-radius: 10px;
+      color: rgb(255, 216, 3);
+      border: 0;
+      text-decoration: none;
+      margin-top: 100px;
 
     }
+
+
   </style>
 </head>
 
 <body>
-  <div class="grid-container">
-    <div class="grid-item">
-      <img id="image" src="img/news.jpeg" alt="Newspaper clipart">
-    </div>
 
-    <div class="grid-item">
-    <h1>Breaking News! Page Not Found</h1>
-    <p>Sorry, the page you are trying to reach does not exist.</p>
-    <a href='index.html' class="button">Front Row News Home</a>
-  </div>
+    <div class="404">
+      <h1>Page Not Found</h1>
+      <p>Sorry, the page you are trying to reach does not exist.</p>
+      <button><a href='index.html' class="button">Page Home</a></button>
+    </div>
 
   </div>
 </body>
