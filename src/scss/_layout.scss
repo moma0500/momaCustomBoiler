@@ -117,6 +117,24 @@ nav ul li {
 
 }
 
+.skill-icons {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: auto;
+
+}
+
+.skill-icons>img {
+  display: flex;
+  padding: 50px;
+  height: 128px;
+  flex:1;
+  border: 1px solid #ccc;
+}
+
 #p1,
 #p2,
 #p3,
@@ -129,6 +147,23 @@ nav ul li {
 #pHead {
   padding-bottom: 8px;
 }
+
+.iconHead{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.material-icons-outlined{
+  padding: 20px;
+  font-size: 40px;  /* Preferred icon size */
+
+}
+
+span:hover{
+  color: $bgYellow;
+}
+
+
 //SMALLER WINDOW
 @media screen and (min-width: 641px) and (max-width: 900px) {
   .container {
