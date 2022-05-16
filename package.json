@@ -17,7 +17,7 @@
   "author": "McClain Martensen",
   "license": "MIT",
   "dependencies": {
-    "webpack": "^5.69.1",
+    "webpack": "^5.72.1",
     "webpack-cli": "^4.9.2"
   },
   "devDependencies": {
